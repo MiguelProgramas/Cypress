@@ -6,5 +6,6 @@ describe('Página Principal', () => {
     cy.get('[data-test="saque"]').contains('Saques sem custo')
     cy.get('[data-test="ponto"]').contains('Programa de pontos')
     cy.get('[data-test="seguro"]').contains('Seguro Dispositivos')
+//    cy.get('h1').contains('Experimente mais liberdade no controle da sua vida financeira. Crie sua conta com a gente!')
   })
 })
