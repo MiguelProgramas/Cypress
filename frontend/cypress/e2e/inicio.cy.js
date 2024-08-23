@@ -28,4 +28,12 @@ describe('Página Principal', () => {
     cy.getByData("parágrafo4").contains('Seus dispositivos móveis (computador e laptop) protegidos por uma mensalidade simbólica.')
 //    cy.getByData('h1').contains('Experimente mais liberdade no controle da sua vida financeira. Crie sua conta com a gente!')
   })
+
+  it('Deve renderizar os parágrafos corretamente!', () => {
+    cy.verifyData('parágrafo1', 'Isso mesmo, nossa conta é digital, sem custo fixo e mais que isso: sem tarifa de manutenção.')
+    cy.verifyData('parágrafo2', 'Você pode sacar gratuitamente 4x por mês de qualquer Banco 24h.')
+    cy.verifyData('parágrafo3', 'Você pode acumular pontos com suas compras no crédito sem pagar mensalidade!')
+    cy.verifyData('parágrafo4', 'Seus dispositivos móveis (computador e laptop) protegidos por uma mensalidade simbólica.')
+
+  })
 })
