@@ -95,6 +95,7 @@ export default function ModalLoginUsuario({
                 placeholder="Digite seu email"
                 value={email}
                 onChange={(event) => setEmail(event.target.value)}
+                
               />
               {erro.path === 'email' ? (
                 <span data-test="mensagem-erro">{erro.message}</span>
@@ -118,7 +119,7 @@ export default function ModalLoginUsuario({
                 ''
               )}
             </label>
-            <Botao acaoBotao="enviar" texto="Acessar" />
+            <Botao acaoBotao="enviar" texto="Acessar" data-test="botao-enviar"/>
           </form>
           <div className={estilos.link}>
             <a href="/">Esqueci minha senha!</a>

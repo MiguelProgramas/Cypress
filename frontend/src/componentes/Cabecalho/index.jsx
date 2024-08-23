@@ -68,6 +68,7 @@ export default function Cabecalho({ path }) {
                 texto="Já tenho conta"
                 tipo="secundario"
                 onClick={() => setModalLoginAberta(true)}
+                data-test="botao-login"
               />
               <ModalLoginUsuario
                 aberta={modalLoginAberta}
